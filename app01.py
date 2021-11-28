@@ -6,7 +6,7 @@ import pymysql
 import json
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://seamus:elicerabbit@team4-db.clq1g0g3exq8.ap-northeast-2.rds.amazonaws.com/csv_data'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://seamus:<hidden>@team4-db.clq1g0g3exq8.ap-northeast-2.rds.amazonaws.com/csv_data'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JSON_SORT_KEYS'] = False  #prevent sorting data by alphabet
 db.init_app(app)
